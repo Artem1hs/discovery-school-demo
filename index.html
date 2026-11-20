@@ -4,18 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#14211d">
   <meta name="description" content="Демонстрационная страница школьной экскурсии по историческому центру Челябинска.">
   <title>Всё начиналось с крепости · Дискавери</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=2">
   <script src="./request.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">К содержанию</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#main">
+      <a class="brand" href="#main" aria-label="Дискавери, к началу страницы">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span>Дискавери<small>Демо экскурсии</small></span>
+        <span class="brand-type">Дискавери<small>Школьные экскурсии</small></span>
       </a>
       <nav class="main-nav" aria-label="Разделы страницы">
         <a href="#route">Маршрут</a>
@@ -25,40 +26,40 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     <section class="hero" aria-labelledby="tour-title">
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="pin" aria-hidden="true"></span> Челябинск · Пешая экскурсия</p>
-          <h1 id="tour-title">Всё начиналось<br>с крепости<span>.</span></h1>
-          <p class="hero-description">Прогулка для школьных классов по Кировке, набережной Миасса и Арт-скверу. Узнаем, с чего начался Челябинск.</p>
+          <p class="eyebrow">Челябинск · Пешая экскурсия</p>
+          <h1 id="tour-title">Всё начиналось <em>с крепости</em></h1>
+          <p class="hero-description">Школьная прогулка по местам, с которых начался Челябинск.</p>
           <a class="button button-primary" href="#request">Подобрать дату</a>
         </div>
-        <figure class="hero-photo">
-          <img src="./assets/kirovka.webp" width="1280" height="960" alt="Скульптура «Мать и сын» на фоне театра имени Глинки в Челябинске" fetchpriority="high">
-          <figcaption>Кировка, исторический центр Челябинска</figcaption>
-        </figure>
       </div>
+      <figure class="hero-photo">
+        <img src="./assets/chelyabinsk-evening.webp" width="1920" height="958" alt="Вечерняя набережная Челябинска и её отражение в реке Миасс" fetchpriority="high">
+        <figcaption>Набережная Миасса, Челябинск</figcaption>
+      </figure>
     </section>
 
     <div class="wrap">
       <dl class="tour-facts">
-        <div><dt>Длительность</dt><dd>1 час 30 минут</dd></div>
+        <div><dt>Длительность</dt><dd>90 минут</dd></div>
         <div><dt>Для школьников</dt><dd>3–11 классы</dd></div>
-        <div><dt>Стоимость на человека</dt><dd>от 550 ₽</dd></div>
-        <div><dt>Дата экскурсии</dt><dd>По согласованию</dd></div>
+        <div><dt>Стоимость на человека</dt><dd>от 550 <span class="currency">₽</span></dd></div>
+        <div><dt>Дата экскурсии</dt><dd>По запросу</dd></div>
       </dl>
     </div>
 
-    <section class="wrap section" id="route" aria-labelledby="route-title">
+    <section class="wrap section route" id="route" aria-labelledby="route-title">
       <div class="section-heading">
         <p class="eyebrow">Маршрут</p>
-        <h2 id="route-title">Город пешком</h2>
+        <h2 id="route-title">По следам старого города</h2>
       </div>
       <div class="route-layout">
         <figure class="route-photo">
-          <img src="./assets/miass.webp" width="1280" height="316" alt="Панорама набережной и реки Миасс в Челябинске" loading="lazy">
-          <figcaption>Набережная Миасса</figcaption>
+          <img src="./assets/kirovka-theatre.webp" width="1280" height="630" alt="Театр имени Глинки и зелёный сквер на площади Ярославского" loading="lazy">
+          <figcaption>Площадь Ярославского, исторический центр</figcaption>
         </figure>
         <ol class="stops" role="list">
           <li><div><h3>Кировка</h3><p>Пешеходная улица в историческом центре. Начнём с истории Челябинской крепости.</p></div></li>
@@ -71,28 +72,26 @@
     <section class="pricing section" id="pricing" aria-labelledby="pricing-title">
       <div class="wrap pricing-layout">
         <div class="section-heading">
-          <p class="eyebrow">Стоимость</p>
-          <h2 id="pricing-title">Цена зависит от размера группы</h2>
+          <h2 id="pricing-title">Стоимость экскурсии</h2>
           <p>Цены из школьного прайса на 2026/27 учебный год. Точную стоимость и доступные даты уточняйте у туроператора.</p>
           <a class="text-link" href="https://discovery-chel.ru/site/assets/files/1023/prais_shkoly_2026-2027-1.pdf">Школьный прайс (PDF)</a>
         </div>
         <table class="price-table">
           <thead><tr><th scope="col">Состав группы</th><th scope="col">На человека</th></tr></thead>
           <tbody>
-            <tr><th scope="row">17 школьников <small>+ 1 сопровождающий</small></th><td>690 ₽</td></tr>
-            <tr><th scope="row">25–31 школьник <small>+ 2 сопровождающих</small></th><td>550 ₽</td></tr>
+            <tr><th scope="row">17 школьников <small>+ 1 сопровождающий</small></th><td>690 <span class="currency">₽</span></td></tr>
+            <tr><th scope="row">25–31 школьник <small>+ 2 сопровождающих</small></th><td>550 <span class="currency">₽</span></td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="wrap section" id="request" aria-labelledby="request-title">
-      <div class="request-panel">
+    <section class="section request" id="request" aria-labelledby="request-title">
+      <div class="wrap request-panel">
         <div class="section-heading">
           <p class="eyebrow">Заявка для класса</p>
-          <h2 id="request-title">На какую дату планируете экскурсию?</h2>
-          <p>Укажите желаемую дату, возраст ребят и число участников.</p>
-          <p class="demo-note" id="demo-note">Демонстрационная форма. Заявка отображается на странице.</p>
+          <h2 id="request-title">Запланируйте прогулку с классом</h2>
+          <p id="demo-note">Демонстрационная форма. Заявка отображается на странице.</p>
         </div>
         <form id="tour-form" aria-describedby="demo-note">
           <div class="field-grid">
@@ -106,7 +105,7 @@
               <input id="group" name="group" type="number" inputmode="numeric" min="1" step="1" placeholder="Например, 25" required>
             </label>
           </div>
-          <button class="button button-dark" type="submit" disabled>Посмотреть заявку</button>
+          <button class="button button-primary" type="submit" disabled>Посмотреть заявку</button>
           <noscript><p>Для предпросмотра заявки включите JavaScript.</p></noscript>
           <div id="request-preview" class="request-preview" hidden>
             <h3 id="preview-title" tabindex="-1">Предпросмотр заявки</h3>
@@ -127,10 +126,9 @@
       <a class="text-link" href="https://discovery-chel.ru/ekskursii-dlya-shkolnikov-chelyabisk/">Сайт туроператора</a>
     </div>
     <div class="wrap photo-credits">
-      Фото: <a href="https://commons.wikimedia.org/wiki/File:Кировка_(Челябинск)_f019.jpg">Ural-66</a> и
-      <a href="https://commons.wikimedia.org/wiki/File:Miass_River_Embankment_in_Chelyabinsk_(August_2025)_-_0_1.jpg">Vyacheslav Bukharov</a>,
-      <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
-      Изображения уменьшены и кадрированы на странице.
+      Фото Вячеслава Бухарова (<a href="https://commons.wikimedia.org/wiki/File:Night_views_of_Chelyabinsk_(June_2025)_-_0_10.jpg">набережная</a>,
+      <a href="https://commons.wikimedia.org/wiki/File:Chelyabinsk_Opera_Theater_(June_2025)_-_0_1.jpg">площадь Ярославского</a>).
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Изображения уменьшены, кадрированы и скорректированы по цвету.
     </div>
   </footer>
 </body>
